@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!--
+Template Name: Academic Education V2
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+
+{% load static %}
+<title>Private Jobs of India</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>    
+  <!--################################  VALIDATION SCRIPT BEGIN  ##########################################-->
+  <link href="{% static 'css/layout.css'%}" rel="stylesheet" type="text/css" media="all">  
+ <script type="text/javascript">
+	function validation()
+	{
+        var Email=document.vForm.email.value;
+        if(Email.indexOf('@')<=0)
+        {
+            alert("Invalid @ position");
+        }
+        if((Email.charAt(Email.length-4)!='.') && (Email.charAt(Email.length-3)!='.'))
+        {
+            alert("Invalid . position");
+        }
+        
+        var phno=document.vForm.mobile.value;
+        if(phno.length<10)
+        {
+            alert("mobile number must be 10 digits");
+        }
+       if((phno.charAt(0)!=9) && (phno.charAt(0)!=8) && (phno.charAt(0)!=7) && (phno.charAt(0)!=6))
+        {
+            alert("Mobile number must start with 9,8,7 and 6");
+            return false;
+        }
+        
+	}
+</script>
+    
+    
+<!--###################################   VALIDATION SCRIPT END   ########################################-->
+  
+  
+
+<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+  <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script-->
+</head>
+<body id="top">
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="clear"> 
+    <!-- ################################################################################################ -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#footer">Contact Us</a></li>
+        <!--li><a href="#">A - Z Index</a></li-->
+        <li><a href="#">Student Login</a></li>
+        <li><a href="#">Staff Login</a></li>
+      </ul>
+    </nav>
+    <!-- ################################################################################################ --> 
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="index.html">Private Jobs of India</a></h1>
+      <!--p>Free Website Template</p-->
+    </div>
+    <div class="fl_right">
+      <form class="clear" method="post" action="#">
+        <fieldset>
+          <legend>Search:</legend>
+          <input type="text" value="" placeholder="Search Here">
+          <button class="fa fa-search" type="submit" title="Search"><em>Search</em></button>
+        </fieldset>
+      </form>
+    </div>
+    <!-- ################################################################################################ --> 
+  </header>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <div class="rounded">
+    <nav id="mainav" class="clear"> 
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li class="active"><a href="#">Home</a></li>
+        <!--li><a class="drop" href="#">Pages</a>
+          <ul>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/portfolio.html">Portfolio</a></li>
+            <li><a href="pages/full-width.html">Full Width</a></li>
+            <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+            <li><a href="pages/sidebar-left-2.html">Sidebar Left 2</a></li>
+            <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+            <li><a href="pages/sidebar-right-2.html">Sidebar Right 2</a></li>
+            <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+          </ul>
+        </li-->
+        <!--li><a class="drop" href="#">Dropdown</a>
+          <ul>
+            <li><a href="#">Level 2</a></li>
+            <li><a class="drop" href="#">Level 2 + Drop</a>
+              <ul>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li-->
+        <li><a href="{% static "register.html" %}">Registration</a></li>
+        <!--li><a href="#">Another Link Text</a></li-->
+        <li><a href="#footer">Contact Us</a></li>
+        <li><a href="#footer">About</a></li>
+      </ul>
+      <!-- ################################################################################################ --> 
+    </nav>
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!--#################################################################################################################-->
+<div class="wrapper row3">
+    <form name="vForm" onsubmit="return validation()">
+    <table align=center>
+                <tr>
+                    <td><font color="black">Name:
+                    <td><input type=text style=color:black placeholder="Enter your Name" required>
+                </tr>
+        
+                <tr>
+                    <td><font color="black">Father's Name:
+                    <td><input type=text style=color:black placeholder="Enter Father Name" required>
+                </tr>
+        
+                <tr>
+                    <td><font color="black">Occupation:</td>
+                    <td><input type=text style=color:black placeholder="Father's Occupation" required>
+                </tr>
+        
+                <tr>
+                    <td><font color="black">DOB:
+                    <td><input type="date" style=color:black>
+                </tr>
+                   
+                <tr>
+                    <td><font color="black">Mobile Number:
+                    <td><input type="text" name="mobile" style=color:black maxlength="10" placeholder="Enter Mobile Number" required>
+                </tr>
+                       
+                <tr>
+                    <td><font color="black">Whats app Number:
+                    <td><input type="text" name="mobile" style=color:black maxlength="10" placeholder="Enter whats app Number" required>
+                </tr>
+                        
+                <tr>
+                    <td><font color="black">Email:
+                    <td><input type="text" name="email" style=color:black placeholder="Enter E-mail address" required>
+                </tr>
+                
+                <tr>
+                    <td><font color="black">Gender:                       
+                    <td>  
+                            <input type="radio" ><font color="black">Male</font>
+                            <input type="radio" ><font color="black">Female</font>
+                    </td> 
+                        
+                </tr>    
+                        
+                <tr>
+                    <td><font color="black">Qualification:
+                    <td><input type="text" style=color:black  placeholder="Enter your Qualification" required>
+                    <!--<td><font color="black">
+                        <select>
+                        
+                            <option>BTech</option>
+                            <option>MCA</option>
+                            <option>MBA</option>
+                            <option>MTech</option>
+
+                        </select>
+                        </font>
+                    </td> 
+                    -->
+                </tr>
+                        
+                <tr>
+                    <!--input type="address" style=color:black  placeholder="Enter Full address" required-->
+                    
+                        <td>
+                           <font color="black">Address:
+                               <td> <textarea rows="4" cols="50"></textarea>
+                    
+                </tr>
+                        
+                <tr>
+                    <td><font color="black">District:
+                    <td><font color="black">
+                        <select>
+                            <option>Select</option>
+                            <option>Adilabad</option>
+                            <option>Ananthapuram</option>
+                            <option>chittoor</option>
+                            <option>East Godavari</option>
+                            <option>Guntur</option>
+                            <option>Krishna</option>
+                            <option>Kadapa</option>
+                            <option>Karimnagar</option>
+                            <option>Khammam</option>
+                            <option>Karnool</option>
+                            <option>Mahabubnagar</option>
+                            <option>Nalgonda</option>
+                            <option>Nizamabad</option>
+                            <option>Neloore</option>
+                            <option>Prakasam</option>
+                            <option>Ramagundam</option>
+                            <option>Srikakulam</option>
+                            <option>Suryapet</option>
+                            <option>Visakhapatanam</option>
+                            <option>Vijayanagaram</option>
+                            <option>West Godavari</option>
+                        </select>
+                        </font>
+                    </td>    
+                </tr>
+                        
+                <tr>
+                    
+                    <td align="right"><input type="submit" >
+                    <td><input type="reset">
+                        
+                    
+                </tr>
+            </table>
+    </form>
+</div>
+<!--#################################################################################################################-->    
+
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <div class="rounded">
+    <footer id="footer" class="clear"> 
+      <!-- ################################################################################################ -->
+      <div class="one_third first">
+        <figure class="center"><img class="btmspace-15" src="{% static "images/demo/worldmap.png" %}" alt="">
+          <figcaption><a href="#">Find Us With Google Maps &raquo;</a></figcaption>
+        </figure>
+      </div>
+      <div class="one_third">
+        <address>
+        Private Jobs of India<br>
+        Near Dondaparty<br>
+        Shankarmatam Road<br>
+        Visakhapatnam<br>
+        530017<br>
+        <br>
+        <i class="fa fa-phone pright-10"></i> 9398684449<br>
+        <i class="fa fa-envelope-o pright-10"></i> <a href="#">ssiva356@gmail.com</a>
+        </address>
+      </div>
+      <div class="one_third">
+        <p class="nospace btmspace-10">Stay Up to Date With What's Happening</p>
+        <ul class="faico clear">
+          <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="faicon-flickr" href="#"><i class="fa fa-flickr"></i></a></li>
+          <li><a class="faicon-rss" href="#"><i class="fa fa-rss"></i></a></li>
+        </ul>
+        <form class="clear" method="post" action="#">
+          <fieldset>
+            <legend>Subscribe To Our Newsletter:</legend>
+            <input type="text" value="" placeholder="Enter Email Here&hellip;">
+            <button class="fa fa-sign-in" type="submit" title="Sign Up"><em>Sign Up</em></button>
+          </fieldset>
+        </form>
+      </div>
+      <!-- ################################################################################################ --> 
+    </footer>
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ --> 
+  </div>
+</div>
+<!-- JAVASCRIPTS --> 
+<script src="{% static "js/jquery.min.js" %}"></script> 
+<script src="{% static "js/jquery.fitvids.min.js" %}"></script> 
+<script src="{% static "js/jquery.mobilemenu.js" %}"></script> 
+<script src="{% static "js/tabslet/jquery.tabslet.min.js" %}"></script>
+</body>
+</html>
